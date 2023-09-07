@@ -1,0 +1,100 @@
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  flex-direction: column;
+  max-width: 1440px;
+  width: 100%;
+  padding: 1rem;
+  gap: 10px;
+}
+
+#title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.scores {
+  align-items: flex-end;
+  font-size: .8rem;
+}
+
+.scores p {
+  width: 100%;
+}
+
+
+.board {
+  align-self: center;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 30% 30% 30%;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333333;
+  border-radius: 10px;
+  border: solid 1px transparent;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.25s;
+}
+
+.card:hover {
+  border-color: #646cff;
+}
+
+.card:active {
+  transform: scale(.9);
+}
+
+.card img {
+  width: 128px;
+  aspect-ratio: 1;
+}
+
+.card p {
+  font-size: .8rem;
+}
+
+
+.game-over {
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 66%;
+}
+
+@media (max-width: 500px) {
+  #title {
+    font-size: .8rem;
+  }
+
+  .card {
+    padding: .5rem;
+  }
+
+  .card p,
+  .scores {
+    font-size: .6rem;
+  }
+
+  .card img {
+    width: 64px;
+  }
+
+}
