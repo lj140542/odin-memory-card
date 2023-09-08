@@ -5,7 +5,7 @@ let status = 'pending';
 let result;
 
 const url = 'https://pokeapi.co/api/v2/pokemon/';
-const numberOfCard = 3;
+const numberOfCard = 9;
 
 export default function Board({ increaseScore, gameOver }) {
   const [cards, setCards] = useState(fetchCards());
