@@ -87,10 +87,6 @@
     font-size: .8rem;
   }
 
-  /* .card {
-    padding: .5rem;
-  } */
-
   .card p,
   .scores {
     font-size: .6rem;
@@ -100,4 +96,10 @@
     width: 96px;
   }
 
+}
+
+@media (prefers-color-scheme: light) {
+  .card {
+    background-color: #eeeeee;
+  }
 }
